@@ -1,0 +1,11 @@
+bottleneck
+cartopy
+geopy
+gsw
+jupyter
+matplotlib
+numpy
+onc
+opencv-python
+pandas
+xarray
