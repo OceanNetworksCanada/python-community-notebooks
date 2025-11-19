@@ -5,3 +5,5 @@ explore how to use [onc](https://github.com/OceanNetworksCanada/api-python-clien
 
 This repository is intended to be a resource for users of all levels who want to deepen their understanding of Ocean Networks Canada data and its capabilities. 
 Contribute, share your feedback, and help grow the community of onc users!
+
+Be advised that community scripts are not regulated, endorsed, developed or maintained by Ocean Networks Canada. All feature & bug-fix requests must be sent to the code's original author.
