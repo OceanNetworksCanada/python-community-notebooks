@@ -80,23 +80,6 @@ def format_datetime(dt: datetime | str) -> str:
         return dtstr
 
 
-def get_onc_token_from_netrc(netrc_path: PathLike | None = None,
-                             machine: str = 'data.oceannetworks.ca') -> str:
-    """
-    Retrieve an Oceans 3.0 API token from a .netrc file.
-
-    :param netrc_path: Path to a .netrc file. If None, the user directory is assumed.
-    :param machine: The machine lookup name in the .netrc file. Default is
-                    'data.oceannetworks.ca'.
-    :return: An Oceans 3.0 API token.
-    """
-    if netrc_path is None:
-        _, __, onc_token = netrc().authenticators(machine)
-    else:
-        _, __, onc_token = netrc(netrc_path).authenticators(machine)
-    return onc_token
-
-
 def scrub_token(query_url: str) -> str:
     """
     Replace a token in a query URL with the string 'REDACTED' so that users don't
